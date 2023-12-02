@@ -16,7 +16,7 @@ public static class MauiProgram
 			.UseSentry(options =>
 			{
 				// The DSN is the only required option.
-				options.Dsn = "FILL ME IN";
+				options.Dsn = "https://454b9be357aa79f9c3d81a10cb192f2f@sentry.emclient.com/15";
 
 				// By default, we will send the last 100 breadcrumbs with each event.
 				// If you want to see everything we can capture from MAUI, you may wish to use a larger value.
@@ -27,9 +27,9 @@ public static class MauiProgram
                 options.IsGlobalModeEnabled = true;
                 options.EnableTracing = true;
 
-                var profilingIntegration = new ProfilingIntegration();
+                /*var profilingIntegration = new ProfilingIntegration();
 
-                options.AddIntegration(profilingIntegration);
+                options.AddIntegration(profilingIntegration);*/
 			})
 
 			.ConfigureFonts(fonts =>
@@ -42,8 +42,7 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
-		var env = Environment.GetEnvironmentVariable("DOTNET_DiagnosticPorts");
-
+		/*var env = Environment.GetEnvironmentVariable("DOTNET_DiagnosticPorts");
 
 		Socket listener = new(AddressFamily.Unix, SocketType.Stream, ProtocolType.Unspecified);
 		listener.Bind(new UnixDomainSocketEndPoint(Path.Join(Path.GetTempPath(), $"dotnet-diagnostic-{Environment.ProcessId}-1-socket")));
@@ -84,7 +83,7 @@ public static class MauiProgram
 					}
 				});
 			}
-        });
+        });*/
 
         return builder.Build();
 	}

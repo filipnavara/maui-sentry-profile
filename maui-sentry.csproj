@@ -64,13 +64,13 @@
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
-		<PackageReference Include="Sentry.Maui" Version="4.0.0-beta.1" />
-		<!--<PackageReference Include="Microsoft.Diagnostics.Tracing.TraceEvent" Version="3.0.8" />
-		<PackageReference Include="Sentry.Profiling" Version="4.0.0-beta.1" />-->
+		<PackageReference Include="Sentry.Maui" Version="4.0.0-beta.2" />
+		<!--<PackageReference Include="Microsoft.Diagnostics.Tracing.TraceEvent" Version="3.0.8" />-->
+		<PackageReference Include="Sentry.Profiling" Version="4.0.0-beta.2" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\sentry-dotnet\src\Sentry.Profiling\Sentry.Profiling.csproj" />
+	  <!--<ProjectReference Include="..\sentry-dotnet\src\Sentry.Profiling\Sentry.Profiling.csproj" />-->
 	  <ProjectReference Include="..\sentry-dotnet\src\Sentry\Sentry.csproj" />
 	</ItemGroup>
 
